@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <!-- Heading TextView -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="16dp"
+        android:text="
+         Welcome to our Community Food Sharing"
+        android:textSize="24sp" />
+
+    <!-- Image View -->
+    <!-- Adjust scaleType as per your requirement -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/donation" />
+
+    <!-- Button to navigate to the food screen -->
+    <Button
+        android:id="@+id/foodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Sharing"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:onClick="navigateToFoodScreen" />
+
+    <!-- Other views can be added below the button -->
+
+</LinearLayout>

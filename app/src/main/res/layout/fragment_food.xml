@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".FoodFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Fragment"
+        android:textSize="24sp" />
+
+    <!-- Button to donate food -->
+    <Button
+        android:id="@+id/donateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate Food"
+        android:layout_marginTop="16dp"
+        android:onClick="onDonateFoodClicked" />
+
+    <!-- Button to request food -->
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Food"
+        android:layout_marginTop="16dp"
+        android:onClick="onRequestFoodClicked" />
+
+</LinearLayout>
